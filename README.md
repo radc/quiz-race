@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Quiz Race
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Quiz Race é um jogo de perguntas e respostas desenvolvido em React. O objetivo do jogo é responder o máximo de perguntas possíveis dentro do tempo limite, acumulando pontos e competindo contra si mesmo para melhorar seu desempenho. O jogo abrange diversas categorias de conhecimento, proporcionando uma experiência divertida e educativa.
 
-## Available Scripts
+## Índice
 
-In the project directory, you can run:
+- [Funcionalidades](#funcionalidades)
+- [Capturas de Tela](#capturas-de-tela)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Como Jogar](#como-jogar)
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Diversas Categorias de Perguntas**: Matemática, Inglês, Geografia, História, Conhecimentos Gerais e Futebol.
+- **Sistema de Tempo Dinâmico**:
+  - **Acertos**: Ao responder corretamente, o jogador ganha **3 segundos** extras.
+  - **Erros**: Ao responder incorretamente, são descontados **10 segundos** do tempo restante.
+  - **Pular Perguntas**: O jogador pode pular uma pergunta pressionando `0`, descontando **3 segundos** do tempo.
+- **Atalhos de Teclado**: Responda rapidamente usando as teclas numéricas correspondentes às opções.
+- **Interface Intuitiva**: Design simples e fácil de usar, focado na experiência do usuário.
+- **Feedback Imediato**: Indicação visual de respostas corretas ou incorretas.
+- **Controle de Pontuação**: Acompanhe seus acertos e tente bater seu recorde.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Capturas de Tela
 
-### `npm test`
+*Em breve...* *(Adicione aqui capturas de tela do jogo para ilustrar a interface e as funcionalidades.)*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas
 
-### `npm run build`
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **JavaScript (ES6+)**: Linguagem de programação utilizada no desenvolvimento.
+- **HTML5 & CSS3**: Marcação e estilização do aplicativo.
+- **Create React App**: Ferramenta para inicializar o projeto React.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Siga os passos abaixo para configurar o projeto localmente:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone o repositório**:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/seu-usuario/quiz-race.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Navegue até o diretório do projeto:**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   cd quiz-race
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Instale as dependências:**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
 
-## Learn More
+4. **Inicie o aplicativo:**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Acesse o Jogo:**:
+Abra o navegador e acesse http://localhost:3000 para começar a jogar.
 
-### Code Splitting
+## Como Jogar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - **Início do Jogo**: Clique no botão "Iniciar Jogo" na tela inicial.
+  - **Responda as Perguntas**: 
+    - Leia atentamente a pergunta e as opções disponíveis.
+    - Você pode clicar na opção desejada ou utilizar as teclas numéricas para responder.
+  - **Tempo**:
+    - O jogo começa com 120 segundos.
+    - Acertos: +3 segundos.
+    - Erros: -10 segundos.
+    - Pular: -3 segundos
+  - **Final do Jogo**:
+    - O jogo termina quando o tempo chega a zero ou todas as perguntas são respondidas.
+    - Veja sua pontuação e tente novamente para melhorar seu desempenho.
