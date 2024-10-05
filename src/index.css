@@ -1,13 +1,149 @@
+/* src/index.css */
+
+/* Importando a fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+button {
+  background-color: #3a3a3a;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  padding: 15px 30px;
+  margin: 10px 0;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 80%;
+  max-width: 300px;
+}
+
+button:hover {
+  background-color: #575757;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button.selected {
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+}
+
+button.correct {
+  background-color: #4CAF50 !important;
+  color: #fff;
+}
+
+button.incorrect {
+  background-color: #F44336 !important;
+  color: #fff;
+}
+
+.timer, .score {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.timer::before {
+  content: '⏰ ';
+}
+
+.question {
+  animation: fadeIn 0.5s ease;
+}
+
+.question h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.question h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.start-screen, .end-screen {
+  margin-top: 100px;
+}
+
+.start-screen h1, .end-screen h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.end-screen p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .question h2 {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+.skip-button {
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+  border: 2px solid #f2f2f2;
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.skip-button:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+.skip-button:active {
+  transform: scale(0.95);
 }
