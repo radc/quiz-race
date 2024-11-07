@@ -2,6 +2,9 @@
 
 Quiz Race é um jogo de perguntas e respostas desenvolvido em React. O objetivo do jogo é responder o máximo de perguntas possíveis dentro do tempo limite, acumulando pontos e competindo contra si mesmo para melhorar seu desempenho. O jogo abrange diversas categorias de conhecimento, proporcionando uma experiência divertida e educativa.
 
+## Jogue Agora
+Quer experimentar o Quiz Race sem precisar instalar nada? [Clique aqui](https://rcquizrace.netlify.app/)
+
 ## Índice
 
 - [Funcionalidades](#funcionalidades)
@@ -24,14 +27,13 @@ Quiz Race é um jogo de perguntas e respostas desenvolvido em React. O objetivo 
 
 ## Capturas de Tela
 
-*Em breve...* *(Adicione aqui capturas de tela do jogo para ilustrar a interface e as funcionalidades.)*
+*Em breve...*
 
 ## Tecnologias Utilizadas
 
 - **React**: Biblioteca JavaScript para construção de interfaces de usuário.
 - **JavaScript (ES6+)**: Linguagem de programação utilizada no desenvolvimento.
 - **HTML5 & CSS3**: Marcação e estilização do aplicativo.
-- **Create React App**: Ferramenta para inicializar o projeto React.
 
 ## Instalação
 
@@ -40,7 +42,7 @@ Siga os passos abaixo para configurar o projeto localmente:
 1. **Clone o repositório**:
 
    ```bash
-   git clone https://github.com/seu-usuario/quiz-race.git
+   git clone https://github.com/radc/quiz-race.git
 
 2. **Navegue até o diretório do projeto:**:
 
